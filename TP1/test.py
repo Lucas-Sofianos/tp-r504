@@ -14,3 +14,7 @@ def test_3 ( ) :
 	assert f.puissance( 0 , 0 ) == 1
 	
 	
+def test_4 ( ) :
+	with pytest.raises(Exception) as e_info:
+		f.puissance( 0 , -2 )
+	
