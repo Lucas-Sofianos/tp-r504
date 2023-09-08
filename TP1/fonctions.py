@@ -1,5 +1,5 @@
 def puissance(a,b):
-	result = 0
+	result = 1
 	if not type(a) is int:	
 		raise TypeError("Only integers are allowed")
 	if not type(b) is int:	
