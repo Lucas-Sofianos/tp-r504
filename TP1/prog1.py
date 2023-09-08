@@ -9,6 +9,6 @@ while True :
 	print("le carré de ",a," est ",b,".")
 	
 	res = f.puissance(a,b)
-	
+	print(res)
 	
 	
