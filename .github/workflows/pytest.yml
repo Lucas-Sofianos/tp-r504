@@ -11,7 +11,9 @@ jobs:
            run: pip3 install pytest
          - name: Run tests
            run: pytest TP1/test.py
-         - name: localisation
+         - name: Type OS executée
            run: echo "Type OS ${{ runner.os }}"
+         - name: localisation branche
            run: echo "Nom branche ${{ github.ref }}"
+         - name: localisation répertoire
            run: echo "Nom repo ${{ github.repository }}"
