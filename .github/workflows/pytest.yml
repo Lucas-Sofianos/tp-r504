@@ -5,13 +5,15 @@ jobs:
       runs-on: ubuntu-latest
       strategy:
          matrix:
-           python-version: [" 3.8 "," 3.10 "]
+            python-version: [" 3.8 "," 3.10 "]
       steps:
          - uses: actions/checkout@v3
          - name: Set up Python for Demo
-           uses: actions/setup−python@v4
+           uses: actions/setup-python@v4
            with:
-             python-version: ${{ matrix.python-version }}
+              python-version: ${{ matrix.python-version }}
+         - name: verification version python
+           run: echo "version python $(python --version)"
          - name: installation de pytest
            run: pip3 install pytest
          - name: Run tests
@@ -24,5 +26,3 @@ jobs:
            run: echo "Nom branche ${{ github.ref }}"
          - name: localisation répertoire
            run: echo "Nom repo ${{ github.repository }}"
-         - name: verification version python
-           run: echo "version python $(python --version)"
