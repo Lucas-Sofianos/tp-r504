@@ -9,8 +9,8 @@ jobs:
       steps:
          - name: Set up Python f o r Demo
            uses: actions/setup−python@v4
-              with:
-                 python−version: ${{ matrix.python−version }}
+           with:
+              python−version: ${{ matrix.python−version }}
          - uses: actions/checkout@v3
          - name: Set up Python for Demo
            uses: actions/setup-python@v4
@@ -22,7 +22,7 @@ jobs:
            run: echo "Type OS ${{ runner.os }}"
          - name: Version OS executée
            run: echo "version OS executée $(lsb_release -a)"
-         - name: localisation branche
+         - name: localisation branche 
            run: echo "Nom branche ${{ github.ref }}"
          - name: localisation répertoire
            run: echo "Nom repo ${{ github.repository }}"
