@@ -26,3 +26,4 @@ jobs:
            run: echo "Nom branche ${{ github.ref }}"
          - name: localisation répertoire
            run: echo "Nom repo ${{ github.repository }}"
+           
