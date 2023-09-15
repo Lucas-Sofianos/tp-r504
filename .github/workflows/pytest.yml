@@ -13,7 +13,11 @@ jobs:
            run: pytest TP1/test.py
          - name: Type OS executée
            run: echo "Type OS ${{ runner.os }}"
+         - name: Version OS executée
+           run: echo ("Version OS ", lsb_release -a)
          - name: localisation branche
            run: echo "Nom branche ${{ github.ref }}"
          - name: localisation répertoire
            run: echo "Nom repo ${{ github.repository }}"
+         - name: verification version python
+           run: echo ("version python ", python --version)
