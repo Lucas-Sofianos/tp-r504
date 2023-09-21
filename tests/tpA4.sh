@@ -1,4 +1,7 @@
 #!/bin/bash
 
 
-for file in /etc |grep $1
+for fichier in ?
+do
+	file fichier
+done
