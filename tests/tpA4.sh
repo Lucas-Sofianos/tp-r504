@@ -1,7 +1,5 @@
 #!/bin/bash
-
-
-for fichier in ?
+for fichier in /etc/$1*.*
 do
-	file fichier
+	file $fichier
 done
