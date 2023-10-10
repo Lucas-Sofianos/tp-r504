@@ -5,3 +5,9 @@ docker run --rm -d -it\
 	 --network net-tp4\
 	 -p 5000:5000\
 	 im-tp4
+
+if [ $? != 0 ]
+then
+	echo "echec de lancement du conteneur app"
+	exit 1
+fi

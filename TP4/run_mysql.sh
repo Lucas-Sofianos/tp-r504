@@ -8,8 +8,8 @@ docker run --rm -d \
 	--network net-tp4 \
 	mysql
 
-
-#if [ "$?" != 0 ] :
-#then
-#	exit "erreur" 
-#fi
+if [ $? != 0 ]
+then
+	echo "echec de lancement du conteneur sql"
+	exit 1
+fi
