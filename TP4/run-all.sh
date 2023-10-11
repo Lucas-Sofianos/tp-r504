@@ -42,6 +42,7 @@ fi
 
 
 #etape 3
+sleep 60
 ./filldb.sh
 
 if [ $? != 0 ]
