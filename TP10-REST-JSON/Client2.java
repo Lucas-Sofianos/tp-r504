@@ -7,6 +7,10 @@ import org.apache.http.client.*;
 import org.apache.http.client.methods.*;
 import org.apache.http.impl.client.*;
 
+
+//pour faire fonctionner le programme utiliser une URL de ce type depuis le site https://omdbapi.com/
+//www.omdbapi.com/?APIKEY="$apikey"&t=mario
+//Pour tester : ./run.sh Client2 "www.omdbapi.com/?APIKEY=751ea6aa&t=oppenheimer"
 public class Client2
 {
 	public static void main( String[] args )
