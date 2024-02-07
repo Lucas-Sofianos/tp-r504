@@ -53,7 +53,7 @@ public class Client2
 		}
 		catch( Exception ex ) {
 			System . out . println( " erreur ! " ) ;
-			ex . printStackTrace ( ) ;
+			#ex . printStackTrace ( ) ;
 		}
 	}
 }
