@@ -17,6 +17,8 @@
 		apt upgrade
 
 2 Analyse de la machine : Lynis
+
+	sudo lynis audit system | ansi2html -l > rapport-lynis.html
 	9.42 suggestion
 	10. 64
 
