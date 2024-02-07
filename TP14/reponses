@@ -15,5 +15,11 @@
 
 		apt update
 		apt upgrade
+
 2 Analyse de la machine : Lynis
-	6.
+	9.42 suggestion
+	10. 64
+
+3 Installation et configuration de Apparmor
+
+
